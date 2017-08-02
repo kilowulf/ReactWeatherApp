@@ -13,7 +13,7 @@ var Examples = (props) => {
     return (
         <div>
             <h3>Examples Component</h3>
-            <p>Hre are some helpful examples</p>
+            <p>Here are some helpful examples</p>
         </div>
     )
 }

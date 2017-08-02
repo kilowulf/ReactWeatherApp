@@ -29230,7 +29230,7 @@
 	        React.createElement(
 	            'p',
 	            null,
-	            'Hre are some helpful examples'
+	            'Here are some helpful examples'
 	        )
 	    );
 	};
