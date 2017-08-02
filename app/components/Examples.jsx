@@ -11,7 +11,7 @@ var React = require('react');
 //arrow function for a stateless/static component
 var Examples = (props) => {
     return (
-        <h3>Examples Component</h3>
+        <h3>Examples Component!</h3>
     )
 }
 
