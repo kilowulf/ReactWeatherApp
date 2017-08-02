@@ -29220,9 +29220,18 @@
 	//arrow function for a stateless/static component
 	var Examples = function Examples(props) {
 	    return React.createElement(
-	        'h3',
+	        'div',
 	        null,
-	        'Examples Component!'
+	        React.createElement(
+	            'h3',
+	            null,
+	            'Examples Component'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Hre are some helpful examples'
+	        )
 	    );
 	};
 
