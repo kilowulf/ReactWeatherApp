@@ -23,7 +23,7 @@ var About = (props) => {
     return (
         <div>
         <h3>About</h3>
-        <p>Learn more about the weather and its extraordinary effects on our planet</p>
+        <p>Learn more about the weather and its extraordinary effects on our planet.</p>
         </div>
     )
 }

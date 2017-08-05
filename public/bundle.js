@@ -29203,7 +29203,7 @@
 	        React.createElement(
 	            'p',
 	            null,
-	            'Learn more about the weather and its extraordinary effects on our planet'
+	            'Learn more about the weather and its extraordinary effects on our planet.'
 	        )
 	    );
 	};
