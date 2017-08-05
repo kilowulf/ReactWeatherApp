@@ -64,7 +64,7 @@
 
 	var Main = __webpack_require__(241);
 	var Weather = __webpack_require__(243);
-	var About = __webpack_require__(273);
+	var About = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"About\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	var Examples = __webpack_require__(274);
 
 	var obj = {
@@ -29165,43 +29165,7 @@
 
 
 /***/ },
-/* 273 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(1);
-
-	// var About = React.createClass({
-	//     render: function () {
-	//         return (
-	//            <h3>About Component</h3>
-	//         );
-	//     }
-	// });
-
-	/*stateless functional component allows for more practical
-	expression for a simple presentational component  */
-	//same as above
-
-	// var About = function (props) {
-	//     return (
-	//         <h3>About Component</h3>
-	//     )
-	// };
-
-	//as a arrow function
-	var About = function About(props) {
-	    return React.createElement(
-	        'h3',
-	        null,
-	        'About Component'
-	    );
-	};
-
-	module.exports = About;
-
-/***/ },
+/* 273 */,
 /* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
