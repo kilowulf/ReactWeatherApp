@@ -9,7 +9,7 @@ var app = express();
 //allows use of host env. const should be all caps by convention
 const PORT = process.env.PORT || 3000;
 
-//request to ensure http traffic(http/https)
+//request to check for http connection(http/https);typical express middleware format
 app.use(function(req, res, next) {
     if(req.headers['x-forwarded-proto']=== 'http') {
         next();
