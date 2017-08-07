@@ -35,7 +35,8 @@ module.exports = {
         filename: './public/bundle.js'
     },
     resolve: {   
-        root: __dirname,            
+        root: __dirname,
+        //the following where necessary to use webpack with foundation and jquery            
         modules: [
         path.resolve('./client'),
         path.resolve(__dirname,'src'), 'node_modules',
