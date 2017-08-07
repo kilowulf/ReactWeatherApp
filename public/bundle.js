@@ -27970,11 +27970,14 @@
 	        null,
 	        React.createElement(Nav, null),
 	        React.createElement(
-	            'h1',
-	            null,
-	            'Main Component'
-	        ),
-	        props.children
+	            'div',
+	            { className: 'row' },
+	            React.createElement(
+	                'div',
+	                { className: 'columns medium-6 large-4 small-centered' },
+	                props.children
+	            )
+	        )
 	    );
 	};
 
@@ -29899,6 +29902,9 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(191),
+	    Link = _require.Link;
+
 	// var Examples = React.createClass({
 	//     render: function () {
 	//         return (
@@ -29908,19 +29914,43 @@
 	// });
 
 	//arrow function for a stateless/static component
+
+
 	var Examples = function Examples(props) {
 	    return React.createElement(
 	        'div',
 	        null,
 	        React.createElement(
-	            'h3',
-	            null,
+	            'h1',
+	            { className: 'text-center' },
 	            'Examples'
 	        ),
 	        React.createElement(
 	            'p',
 	            null,
-	            'Here are some helpful examples'
+	            'Here are a  few locations to checkout!'
+	        ),
+	        React.createElement(
+	            'ol',
+	            null,
+	            React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                    Link,
+	                    { to: '/?location=Philadelphia' },
+	                    'Philadelphia, PA'
+	                )
+	            ),
+	            React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                    Link,
+	                    { to: '/?location=Rio' },
+	                    'Rio, Brazil'
+	                )
+	            )
 	        )
 	    );
 	};
