@@ -2,9 +2,8 @@
 var React = require('react');
 var ReactDOM =require('react-dom');
 
-//destructuring syntax to initilaize multiple modules
+//destructuring syntax to initialize multiple modules
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-
 
 //single instance
 // var Route = require('react-router').Route;
@@ -13,11 +12,16 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
-var obj = {
-        name: 'Aaron'
-}
+//Load foundation; style!css! loader format
+require('style!css!foundation-sites/dist/foundation.min.css'),
 
-var {name} = obj;
+$(document).foundation();
+
+// var obj = {
+//         name: 'Aaron'
+// }
+
+// var {name} = obj;
 
 //INITIALIZATION CODE
 

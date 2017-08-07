@@ -18,6 +18,7 @@ expression for a simple presentational component  */
 //     )
 // };
 
+
 //as a arrow function
 var About = (props) => {
     return (
