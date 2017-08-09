@@ -27,7 +27,7 @@ var WeatherMessage = ({temp, location}) => {
     // var {temp, location} = props;
     return (
            <div >
-                <h3>It is <span style={{fontWeight: 'bold'}}>{temp}</span><span style={{fontWeight: 'light', fontSize: '108%'}}>&#8457;</span> in <span style={{fontWeight: 'bold'}}>{location}</span>!</h3>
+                <h3 className="text-center">It is <span style={{fontWeight: 'bold'}}>{temp}</span><span style={{fontWeight: 'light', fontSize: '108%'}}>&#8457;</span> in <span style={{fontWeight: 'bold'}}>{location}</span>!</h3>
            </div>
         );
 }
