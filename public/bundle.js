@@ -29851,7 +29851,7 @@
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -29877,17 +29877,41 @@
 	//as a arrow function
 	var About = function About(props) {
 	    return React.createElement(
-	        'div',
+	        "div",
 	        null,
 	        React.createElement(
-	            'h3',
-	            null,
-	            'About'
+	            "h1",
+	            { className: "text-center" },
+	            "About"
 	        ),
 	        React.createElement(
-	            'p',
+	            "p",
 	            null,
-	            'Learn more about the weather and its extraordinary effects on our planet.'
+	            "This App was built with the help of ",
+	            React.createElement(
+	                "a",
+	                { href: "https://facebook.github.io/react" },
+	                "React"
+	            ),
+	            ", ",
+	            React.createElement(
+	                "a",
+	                { href: "http://foundation.zurb.com/" },
+	                "Foundation"
+	            ),
+	            " and a outstanding API from ",
+	            React.createElement(
+	                "a",
+	                { href: "http://openweathermap.org/" },
+	                "OpenWeatherMap"
+	            ),
+	            ". Find the Repository for this Code on my ",
+	            React.createElement(
+	                "a",
+	                { href: "https://github.com/kilowulf/ReactWeatherApp" },
+	                "Git"
+	            ),
+	            "."
 	        )
 	    );
 	};
