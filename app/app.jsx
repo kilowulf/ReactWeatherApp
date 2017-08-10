@@ -19,7 +19,7 @@ require('style!css!foundation-sites/dist/foundation.min.css'),
 $(document).foundation();
 
 //App CSS Loader
-require('style!css!applicationStyles')
+require('style!css!sass!applicationStyles')
 
 // var obj = {
 //         name: 'Aaron'
