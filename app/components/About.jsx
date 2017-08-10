@@ -23,7 +23,7 @@ expression for a simple presentational component  */
 var About = (props) => {
     return (
         <div>
-        <h1 className="text-center">About</h1>
+        <h1 className="text-center page-title">About</h1>
         <p>This App was built with the help of <a href="https://facebook.github.io/react">React</a>, <a href="http://foundation.zurb.com/">Foundation</a> and a outstanding API from <a href="http://openweathermap.org/">OpenWeatherMap</a>. Find the Repository for this Code on my <a href="https://github.com/kilowulf/ReactWeatherApp">Git</a>
 .</p>
         </div>
