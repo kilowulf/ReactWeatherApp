@@ -17,10 +17,19 @@ var {Link, IndexLink} = require('react-router');
 
 //stateless arrow function for a presentational component
 var Nav = React.createClass({
+        
         onSearch: function (e) {
                 e.preventDefault();
-                alert('Not yet wired up');
-        },
+
+                var location = this.refs.search.value;
+                var encodedLocation = encodeURIComponent(location);
+
+                if (location.length > 0) {
+                        this.refs.search.value = '';
+                        window.location.hash = '#/?location=' + encodedLocation;
+                }
+        },      
+
         render: function () {
             return (
             <div className="top-bar">
@@ -42,7 +51,7 @@ var Nav = React.createClass({
                 <form onSubmit={this.onSearch}>
                         <ul className="menu">
                                 <li>
-                                <input type="search" placeholder="Search weather by city"/>
+                                <input type="search" ref="search" placeholder="Search weather by city"/>
                                 </li>
                                 <li>
                                 <input type="submit" className="button" value="Get Weather"/>

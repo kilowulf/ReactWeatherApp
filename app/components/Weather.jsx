@@ -19,7 +19,9 @@ var Weather = React.createClass({
 
         this.setState({
             isLoading: true,
-            errorMessage: undefined
+            errorMessage: undefined,
+            location: undefined,
+            temp: undefined
         });
 
         //the then() is part of the promise api taking two arguments, success and error
@@ -38,6 +40,26 @@ var Weather = React.createClass({
             });                        
         });        
     },
+    //calls handlesearch when loaded
+    componentDidMount: function () {
+        var location = this.props.location.query.location;
+
+        //initiate or pass to search handler
+        if (location && location.length > 0) {
+            this.handleSearch(location);
+            window.location.hash = '#/';
+        }
+    },
+    //ensures page is able to capture changes to props
+    componentWillReceiveProps: function (newProps) {
+        var location = newProps.location.query.location;
+
+        if (location && location.length > 0) {
+            this.handleSearch(location);
+            window.location.hash = '#/';
+        }
+    },
+
     
     render: function () {
         //es6 destructuring to create variables
