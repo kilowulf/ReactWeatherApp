@@ -27974,12 +27974,23 @@
 	        React.createElement(Nav, null),
 	        React.createElement(
 	            'div',
-	            { className: 'row' },
+	            { className: 'row', id: 'body' },
 	            React.createElement(
 	                'div',
-	                { className: 'columns medium-6 large-4 small-centered' },
+	                { className: 'columns medium-6 large-4 small-centered', id: 'body' },
 	                props.children
 	            )
+	        ),
+	        React.createElement(
+	            'footer',
+	            { className: 'text-center' },
+	            'CodeIQ ',
+	            React.createElement(
+	                'span',
+	                null,
+	                '\xA9'
+	            ),
+	            ' 2017'
 	        )
 	    );
 	};
@@ -28251,7 +28262,7 @@
 	                React.createElement("input", { type: "search", ref: "location", placeholder: "Search weather by city" }),
 	                React.createElement(
 	                    "button",
-	                    { className: "button expanded hollow" },
+	                    { className: "button expanded hollow", id: "button" },
 	                    "Get Weather"
 	                )
 	            )
@@ -30150,7 +30161,7 @@
 	var About = function About(props) {
 	    return React.createElement(
 	        "div",
-	        null,
+	        { id: "body" },
 	        React.createElement(
 	            "h1",
 	            { className: "text-center page-title" },
@@ -30638,7 +30649,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n  color: slategray; }\n\ninput[type=search] {\n  box-shadow: none; }\n", ""]);
+	exports.push([module.id, "#button {\n  background-color: aliceblue; }\n\n.page-title,\np,\nol {\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n  color: darkslategray;\n  font-family: serif;\n  font-style: georgia, serif;\n  text-align: center; }\n\ninput[type=search] {\n  box-shadow: none; }\n\n#body {\n  background-color: powderblue; }\n\nfooter {\n  background-color: deepskyblue; }\n", ""]);
 
 	// exports
 

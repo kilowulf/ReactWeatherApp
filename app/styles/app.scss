@@ -1,11 +1,31 @@
 $space-large:2.5rem;
-$title-color: slategray;
-.page-title {
+$title-color: darkslategray;
+$bodyColor: powderblue;
+$button: aliceblue;
+$footer: deepskyblue;
+#button {
+    background-color: $button;
+}
+
+.page-title,
+p,
+ol {
     margin-top: $space-large;
     margin-bottom: $space-large;
     color: $title-color;
+    font-family: serif;
+    font-style: georgia, serif;
+    text-align: center;
 }
 
 input[type=search] {
     box-shadow: none;
+}
+
+#body {
+    background-color: $bodyColor;
+}
+
+footer {
+    background-color: $footer;
 }
