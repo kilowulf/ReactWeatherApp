@@ -30649,7 +30649,7 @@
 
 
 	// module
-	exports.push([module.id, "#button {\n  background-color: aliceblue; }\n\n.page-title,\np,\nol {\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n  color: darkslategray;\n  font-family: serif;\n  font-style: georgia, serif;\n  text-align: center; }\n\ninput[type=search] {\n  box-shadow: none; }\n\n#body {\n  background-color: powderblue; }\n\nfooter {\n  background-color: deepskyblue; }\n", ""]);
+	exports.push([module.id, "#button {\n  background-color: aliceblue; }\n\n.page-title,\np,\nol {\n  margin-top: 2.5rem;\n  margin-bottom: 1rem;\n  color: darkslategray;\n  font-family: serif;\n  font-style: georgia, serif;\n  text-align: center; }\n\ninput[type=search] {\n  box-shadow: none; }\n\n#body {\n  background-color: powderblue; }\n\nfooter {\n  background-color: white; }\n", ""]);
 
 	// exports
 

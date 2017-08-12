@@ -1,8 +1,9 @@
 $space-large:2.5rem;
+$space-small: 1.0rem;
 $title-color: darkslategray;
 $bodyColor: powderblue;
 $button: aliceblue;
-$footer: deepskyblue;
+$footer: white;
 #button {
     background-color: $button;
 }
@@ -11,7 +12,7 @@ $footer: deepskyblue;
 p,
 ol {
     margin-top: $space-large;
-    margin-bottom: $space-large;
+    margin-bottom: $space-small;
     color: $title-color;
     font-family: serif;
     font-style: georgia, serif;
